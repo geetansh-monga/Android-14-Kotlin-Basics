@@ -1,15 +1,16 @@
 package com.example.kotlinbasics
 
 fun main(){
-    makeCoffee()
-    makeCoffee()
-    makeCoffee()
+    makeCoffee(2,"Geetansh")
+    makeCoffee(3,"Denis")
+    makeCoffee(1,"Robert")
+
 }
 
-fun makeCoffee(){
-    println("Buy Beans")
-    println("Boil water to 90 degree celsius")
-    println("grind the beans")
-    println("push the hot water through grinded beans")
-    println("Pour the coffee in the mug")
+fun makeCoffee(spoon:Int,name:String){
+    if(spoon ==1){
+        println("Coffee with $spoon spoon of sugar for $name")
+    }else{
+        println("Coffee with $spoon spoons of sugar for $name")
+    }
 }
